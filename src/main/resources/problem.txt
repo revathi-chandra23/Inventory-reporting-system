@@ -1,0 +1,113 @@
+Why It’s Useful:
+The "trend" report helps you analyze stock flow over time —
+e.g.:
+
+Which products were moving in/out
+
+On what dates
+
+In which warehouses
+
+How much quantity was transacted
+
+You can build graphs from this data to visualize trends, like:
+
+Daily net stock flow
+
+Top products moving
+
+Warehouse-specific activity
+
+Re-insert CSV data in this order:
+
+First: product
+
+Then: warehouse
+
+Then: stock_transaction, ensuring the IDs match the actual product and warehouse rows.
+
+Here are some practical and valuable feature ideas you can add to your Inventory Report Management System to enhance it for real-world usability, business insight, and robustness:
+
+ 1. PDF Report Generation
+Add an endpoint to generate downloadable PDF reports for:
+
+Low stock items
+
+Stock trends
+
+Current stock
+
+Use a library like iText or Apache PDFBox
+
+ 2. Scheduled Email Reports
+Automatically send weekly/monthly stock reports to warehouse managers.
+
+Use @Scheduled in Spring + JavaMailSender
+
+Email types:
+
+Low stock alert
+
+Daily stock movement summary
+
+ 3. Audit Logs
+Track who uploaded/updated what and when (esp. CSV imports).
+
+Add an AuditLog entity and save user actions with timestamps.
+
+Useful for traceability and admin monitoring.
+
+ 4. Inventory Dashboard (Frontend)
+Use React, Angular, or Vue to build a simple UI.
+
+Show:
+
+Current stock per product
+
+Inventory trends
+
+Visuals like bar/pie charts using Chart.js or Recharts
+
+5. CSV Import Validation
+Add checks during CSV upload:
+
+Missing columns
+
+Invalid product IDs
+
+Duplicates
+
+Wrong date format
+
+Return detailed error messages line-by-line
+
+ 6. Role-Based Access Control (RBAC)
+Roles: Admin, Manager, Viewer
+
+Only Admin can upload/import CSV
+
+Use Spring Security + JWT/Auth token
+
+7. Pagination and Filtering for Stock Reports
+Support /current-stock?page=1&size=20&warehouse=Main
+
+Add sorting, filtering by:
+
+Warehouse
+
+Product
+
+Quantity threshold
+
+ 8. Product Expiry Tracking (if perishable)
+Add expiryDate to StockTransaction
+
+Feature to view soon-to-expire stock
+
+ 9. Export to Excel
+Support .xlsx downloads using Apache POI
+
+10. Bulk Delete / Reset
+Admin endpoint to wipe/reload inventory (for testing/demo)
+
+Confirmations and protected access

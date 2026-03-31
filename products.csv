@@ -1,0 +1,11 @@
+name,sku,reorderLevel
+Pen,PEN001,50
+Notebook,NB001,30
+Pencil,PCL001,40
+Eraser,ERS001,60
+Sharpener,SHP001,25
+Marker,MRK001,35
+Scale,SCL001,15
+Glue,GLU001,10
+Tape,TPE001,18
+Stapler,STP001,12
