@@ -1,5 +1,6 @@
- Inventory Report Management System – Project Overview
-🧩 Objective
+ ### Inventory Report Management System – Project Overview
+
+# Objective
 To build a backend system that monitors and reports inventory movement (stock in/out) across multiple products and warehouses using data imported from CSV files. It provides insights such as current stock, low stock alerts, and inventory trends.
 
  Project Overview Summary
@@ -23,7 +24,7 @@ Uses scheduled tasks for automatic checks
 | **File Handling & Streams**                       | Parsing CSVs via `InputStream`                                     |
 | **Java 8+ Features**                              | `Streams`, `Lambdas`, `Optional`, `LocalDate`                      |
 
-Spring Boot & Spring Framework Concepts
+# Spring Boot & Spring Framework Concepts
 
 | Concept                      | Description                                                             |
 | ---------------------------- | ----------------------------------------------------------------------- |
@@ -37,7 +38,7 @@ Spring Boot & Spring Framework Concepts
 | **Validation & Constraints** | Entity annotations like `@Column(unique = true)`                        |
 | **Exception Handling**       | `@ExceptionHandler` or thrown in services                               |
 
-utility concepts
+# utility concepts
 
 | Concept                                       | Description                                                                 |
 | --------------------------------------------- | --------------------------------------------------------------------------- |
@@ -238,12 +239,12 @@ User authentication (Spring Security)
  | JavaBeans               | ✅     |
 
 
-✅ 1. Java Collections Framework
+ 1. Java Collections Framework
 Used extensively for handling data:
 
 List, Map, Set, ArrayList, HashMap, etc.
 
-✅ 2. OOP Principles
+2. OOP Principles
 Your code uses Object-Oriented Programming concepts:
 
 Encapsulation: via classes like Product, Warehouse, StockTransaction, DTOs
@@ -253,7 +254,7 @@ Abstraction: Interfaces like ProductRepository, WarehouseRepository
 Inheritance & Polymorphism: through annotations and service abstraction layers (like EmailService, ReportService)
 
 
-✅ 3. Exception Handling
+ 3. Exception Handling
 Custom and runtime exceptions
 
  6. Annotations (from core Java and Spring)
@@ -268,7 +269,7 @@ Some annotations are Spring-specific, but conceptually tied to core Java:
 @Column(unique = true) (JPA metadata configuration)
 
 
-✅ 7. Java Bean Standards
+ 7. Java Bean Standards
 All your model and DTO classes follow the JavaBeans convention:
 
 Private fields with public getters/setters
