@@ -202,7 +202,7 @@ src/
 ##  API Endpoints
 
 ### Upload CSV
-```http
+
 POST /api/report/upload
 Form-Data:
 - file: (CSV File)
