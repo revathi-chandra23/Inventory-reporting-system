@@ -1,6 +1,6 @@
- ### Inventory Report Management System – Project Overview
+ # Inventory Report Management System – Project Overview
 
-# Objective
+## Objective
 To build a backend system that monitors and reports inventory movement (stock in/out) across multiple products and warehouses using data imported from CSV files. It provides insights such as current stock, low stock alerts, and inventory trends.
 
  Project Overview Summary
@@ -24,7 +24,7 @@ Uses scheduled tasks for automatic checks
 | **File Handling & Streams**                       | Parsing CSVs via `InputStream`                                     |
 | **Java 8+ Features**                              | `Streams`, `Lambdas`, `Optional`, `LocalDate`                      |
 
-# Spring Boot & Spring Framework Concepts
+## Spring Boot & Spring Framework Concepts
 
 | Concept                      | Description                                                             |
 | ---------------------------- | ----------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ Uses scheduled tasks for automatic checks
 | **Validation & Constraints** | Entity annotations like `@Column(unique = true)`                        |
 | **Exception Handling**       | `@ExceptionHandler` or thrown in services                               |
 
-# utility concepts
+## utility concepts
 
 | Concept                                       | Description                                                                 |
 | --------------------------------------------- | --------------------------------------------------------------------------- |
